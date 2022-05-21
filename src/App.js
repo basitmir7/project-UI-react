@@ -1,13 +1,9 @@
-import { useState } from "react";
 import "./App.css";
 
 function App() {
   const name1 = "zubair";
   const name2 = "Basit";
-  const [isdance, setIsdance] = useState(false);
-  const toggleDance = () => {
-    setIsdance = !isdance;
-  };
+
   return (
     <div className="App">
       <h1>
