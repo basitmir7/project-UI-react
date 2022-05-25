@@ -1,34 +1,50 @@
+:root {
+  --primary-color: #00ff00;
+}
 .App {
   text-align: center;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 38, 255, 0.47),
-    rgba(21, 255, 142, 0.47)
-  );
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
+}
+
+.header-hero {
+  background: url("../public/assets/Layer\ 1.png");
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-hero::before {
   position: absolute;
-}
-.Names {
-  font-size: 45px;
-  color: rgb(155, 0, 0);
-  text-shadow: 0 2px 3px #000000;
-
-  text-transform: uppercase;
-}
-.dance {
-  animation: dance-on 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite
-    alternate-reverse;
+  left: 0;
+  top: 0;
+  content: "";
+  background-image: url("../public/assets/Layer\ 1\ copy.png");
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes dance-on {
-  0% {
-    color: rgb(255, 95, 15);
-  }
-  100% {
-    color: rgb(138, 0, 244);
-    transform: scale(1.6);
-  }
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.navbar-links {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 13px;
+  margin-top: 18px;
+  margin-right: 18px;
+  padding-top: 22px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.sinle-link:hover {
+  color: red !important;
 }
